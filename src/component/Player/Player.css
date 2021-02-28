@@ -1,0 +1,19 @@
+.player-container{
+    height:100%;
+    width: 50%;
+    border: 3px solid rgb(192, 192, 248);
+    border-radius:3px;
+    margin: 15px;
+    padding: 7px;
+    
+
+}
+.player-detail{
+    display:flex;
+}
+.player-detail img{
+    width: 150px;
+    height: 150px;
+    margin: 10px;
+    margin-right: 20px;
+}
