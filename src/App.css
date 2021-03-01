@@ -1,5 +1,15 @@
 .App {
   text-align: center;
+  background-image: linear-gradient(to right, rgba(160, 248, 152, 0.5), rgb(248, 126, 126));
+}
+.heading{
+margin-bottom:40px;
+padding: 10px;
+height: 70px;
+}
+.playersList{
+  border:1px solid rgb(207, 252, 166);
+  border-radius: 5px;
 }
 
 /* .App-logo {

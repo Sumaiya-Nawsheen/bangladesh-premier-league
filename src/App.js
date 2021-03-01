@@ -19,18 +19,19 @@ function App() {
   }
   return (
     <div className="App">
-      <h1>Bangladesh Premier League</h1>
-
+      <div className="bg-info heading">
+      <h1>Bangladesh Premier League (BPL)</h1>
+      </div>
       <Container>
   <Row>
-    <Col>
-    <div>
+    <Col xs={8}>
+    <div className="playersList">
       {
 players.map( player => <Player player = {player} key={player.id} handleAddPlayer={handleAddPlayer}></Player>)
       }
       </div> 
     </Col>
-    <Col>
+    <Col xs={4}>
     <div>
       <Team addPlayer={addPlayer} ></Team>
       </div>
