@@ -8,7 +8,7 @@ const Player = (props) => {
     const handleAddPlayer = props.handleAddPlayer;
     return (
 
-<div className="container-fluid d-flex flex-row mb-3">
+<div className="container-fluid d-flex flex-row mb-3 show-grid row-no-padding">
 <Card className="mb-3" style={{color:"#000", width:"18rem"}}>
 <Card.Img src={img}/> 
 <Card.Body>

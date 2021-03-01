@@ -4,6 +4,8 @@ import Player from './component/Player/Player';
 import Team from './component/Team/Team';
 import playersData from './data/data.json';
 import './App.css';
+import {Container, Row, Col } from 'react-bootstrap';
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 function App() {
   const [players, setPlayers] = useState([]);
@@ -18,15 +20,24 @@ function App() {
   return (
     <div className="App">
       <h1>Bangladesh Premier League</h1>
-      <div>
-      <Team addPlayer={addPlayer} ></Team>
-      </div>
-      <div>
+
+      <Container>
+  <Row>
+    <Col>
+    <div>
       {
 players.map( player => <Player player = {player} key={player.id} handleAddPlayer={handleAddPlayer}></Player>)
       }
-      </div>  
-    </div>
+      </div> 
+    </Col>
+    <Col>
+    <div>
+      <Team addPlayer={addPlayer} ></Team>
+      </div>
+    </Col>
+  </Row>
+  </Container>
+       </div>
   );
 }
 
