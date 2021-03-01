@@ -3,6 +3,7 @@ import "./Player.css"
 
 const Player = (props) => {
     const {name, salary, img} = props.player;
+    const handleAddPlayer = props.handleAddPlayer;
     return (
         <div className="player-container">
             <div className="player-detail">
@@ -12,7 +13,7 @@ const Player = (props) => {
             <div>
             <h2>{name} </h2>
             <p>${salary}</p>
-            <button> Add Player</button>
+            <button onClick={()=> handleAddPlayer(props.player)}> Add Player</button>
             </div>
              </div>
            
